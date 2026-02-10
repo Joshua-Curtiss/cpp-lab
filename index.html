@@ -10,9 +10,8 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <h1>CPP Lab</h1>
-                <p class="logo-subtitle">Computational Clinical Psychology</p>
+            <div class="nav-logo">
+                <h1><a href="#home">CPP Lab</a></h1>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -24,44 +23,37 @@
                 <li><a href="#join" class="nav-link">Join Us</a></li>
                 <li><a href="#participate" class="nav-link">Participate</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Welcome to the Computational Clinical Psychology Lab</h2>
-            <p>Advancing mental health through computational methods and data science</p>
-            <a href="#research" class="cta-button">Explore Our Research</a>
+    <section id="home" class="section hero">
+        <div class="container">
+            <h2>Computational Clinical Psychology Lab</h2>
+            <p>Advancing mental health through computational methods and evidence-based research</p>
         </div>
     </section>
 
     <!-- Research Section -->
     <section id="research" class="section">
         <div class="container">
-            <h2>Our Research</h2>
-            <p class="section-intro">We conduct cutting-edge research at the intersection of clinical psychology and computational science.</p>
-            
-            <div class="research-grid">
-                <div class="research-card">
-                    <h3>Project 1: [Your Project Title]</h3>
-                    <p>Brief description of your research project, methods, and objectives.</p>
-                    <a href="#" class="learn-more">Learn More →</a>
-                </div>
-                <div class="research-card">
-                    <h3>Project 2: [Your Project Title]</h3>
-                    <p>Brief description of your research project, methods, and objectives.</p>
-                    <a href="#" class="learn-more">Learn More →</a>
-                </div>
-                <div class="research-card">
-                    <h3>Project 3: [Your Project Title]</h3>
-                    <p>Brief description of your research project, methods, and objectives.</p>
-                    <a href="#" class="learn-more">Learn More →</a>
+            <h2>Research</h2>
+            <div class="content">
+                <p>Our lab conducts cutting-edge research at the intersection of clinical psychology and computational science. We develop and apply advanced computational methods to understand, assess, and treat mental health conditions.</p>
+                
+                <div class="research-items">
+                    <div class="item">
+                        <h3>Research Focus 1</h3>
+                        <p>Description of your research area, methods, and objectives.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Research Focus 2</h3>
+                        <p>Description of your research area, methods, and objectives.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Research Focus 3</h3>
+                        <p>Description of your research area, methods, and objectives.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,38 +62,32 @@
     <!-- People Section -->
     <section id="people" class="section">
         <div class="container">
-            <h2>Our Team</h2>
-            <p class="section-intro">Meet the researchers driving innovation in computational clinical psychology.</p>
-            
-            <div class="team-section">
-                <h3 class="team-category">Principal Investigator</h3>
+            <h2>People</h2>
+            <div class="content">
+                <h3>Principal Investigator</h3>
+                <div class="team-member">
+                    <h4>Dr. [Your Name]</h4>
+                    <p><em>Principal Investigator</em></p>
+                    <p>Brief bio and research interests.</p>
+                    <p><a href="mailto:your.email@institution.edu">your.email@institution.edu</a></p>
+                </div>
+
+                <h3 style="margin-top: 2em;">Graduate Students & Postdocs</h3>
                 <div class="team-grid">
                     <div class="team-member">
-                        <img src="images/pi-photo.jpg" alt="PI Name" class="member-photo">
-                        <h4>Your Name</h4>
-                        <p class="member-title">Principal Investigator</p>
-                        <p class="member-bio">Brief bio and research interests.</p>
-                        <a href="mailto:your.email@institution.edu" class="member-email">Email</a>
+                        <h4>Student Name</h4>
+                        <p><em>PhD Student</em></p>
+                        <p>Research interests and focus areas.</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="team-section">
-                <h3 class="team-category">Graduate Students</h3>
-                <div class="team-grid">
                     <div class="team-member">
-                        <img src="images/grad-student.jpg" alt="Student Name" class="member-photo">
-                        <h4>Graduate Student Name</h4>
-                        <p class="member-title">PhD Candidate</p>
-                        <p class="member-bio">Research interests and focus areas.</p>
-                        <a href="mailto:student.email@institution.edu" class="member-email">Email</a>
+                        <h4>Postdoc Name</h4>
+                        <p><em>Postdoctoral Researcher</em></p>
+                        <p>Research interests and background.</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="team-section">
-                <h3 class="team-category">Alumni</h3>
-                <p>List of past lab members and their current positions...</p>
+                <h3 style="margin-top: 2em;">Alumni</h3>
+                <p>Information about past lab members and their current positions...</p>
             </div>
         </div>
     </section>
@@ -110,31 +96,21 @@
     <section id="publications" class="section">
         <div class="container">
             <h2>Publications</h2>
-            <p class="section-intro">Our research contributions to the field.</p>
-            
-            <div class="publications-list">
-                <div class="pub-year">
-                    <h3>2025</h3>
-                    <div class="publication">
-                        <p class="pub-title"><strong>Publication Title (Year)</strong></p>
-                        <p class="pub-authors">Author Names et al.</p>
-                        <p class="pub-journal"><em>Journal Name, Volume(Issue), Pages.</em></p>
-                        <p class="pub-links">
-                            <a href="#">DOI</a> | <a href="#">PDF</a> | <a href="#">Citation</a>
-                        </p>
-                    </div>
+            <div class="content">
+                <h3>2025</h3>
+                <div class="publication">
+                    <p><strong>Publication Title</strong></p>
+                    <p><em>Author Names et al.</em></p>
+                    <p><em>Journal Name, Volume(Issue), Pages.</em></p>
+                    <p><a href="#">DOI</a> | <a href="#">PDF</a></p>
                 </div>
 
-                <div class="pub-year">
-                    <h3>2024</h3>
-                    <div class="publication">
-                        <p class="pub-title"><strong>Publication Title (Year)</strong></p>
-                        <p class="pub-authors">Author Names et al.</p>
-                        <p class="pub-journal"><em>Journal Name, Volume(Issue), Pages.</em></p>
-                        <p class="pub-links">
-                            <a href="#">DOI</a> | <a href="#">PDF</a> | <a href="#">Citation</a>
-                        </p>
-                    </div>
+                <h3>2024</h3>
+                <div class="publication">
+                    <p><strong>Publication Title</strong></p>
+                    <p><em>Author Names et al.</em></p>
+                    <p><em>Journal Name, Volume(Issue), Pages.</em></p>
+                    <p><a href="#">DOI</a> | <a href="#">PDF</a></p>
                 </div>
             </div>
         </div>
@@ -143,21 +119,19 @@
     <!-- Instruments Section -->
     <section id="instruments" class="section">
         <div class="container">
-            <h2>Assessment Instruments & Tools</h2>
-            <p class="section-intro">Computational tools and validated instruments developed by our lab.</p>
-            
-            <div class="instruments-grid">
-                <div class="instrument-card">
+            <h2>Instruments & Tools</h2>
+            <div class="content">
+                <div class="item">
                     <h3>Instrument/Tool Name</h3>
                     <p>Description of the instrument, its purpose, and applications.</p>
                     <p><strong>Citation:</strong> [How to cite this tool]</p>
-                    <a href="#">View Documentation</a> | <a href="#">Download</a>
+                    <p><a href="#">Documentation</a> | <a href="#">Download</a></p>
                 </div>
-                <div class="instrument-card">
+                <div class="item">
                     <h3>Instrument/Tool Name</h3>
                     <p>Description of the instrument, its purpose, and applications.</p>
                     <p><strong>Citation:</strong> [How to cite this tool]</p>
-                    <a href="#">View Documentation</a> | <a href="#">Download</a>
+                    <p><a href="#">Documentation</a> | <a href="#">Download</a></p>
                 </div>
             </div>
         </div>
@@ -167,64 +141,48 @@
     <section id="news" class="section">
         <div class="container">
             <h2>News & Updates</h2>
-            <p class="section-intro">Recent updates from the CPP Lab.</p>
-            
-            <div class="news-grid">
+            <div class="content">
                 <article class="news-item">
                     <h3>Recent News Title</h3>
-                    <p class="news-date">February 10, 2026</p>
-                    <p class="news-content">Description of recent news, publication, event, or lab update.</p>
-                    <a href="#">Read More →</a>
+                    <p><em>February 10, 2026</em></p>
+                    <p>Description of recent news, publication, event, or lab update.</p>
                 </article>
                 <article class="news-item">
                     <h3>Recent News Title</h3>
-                    <p class="news-date">January 15, 2026</p>
-                    <p class="news-content">Description of recent news, publication, event, or lab update.</p>
-                    <a href="#">Read More →</a>
+                    <p><em>January 15, 2026</em></p>
+                    <p>Description of recent news, publication, event, or lab update.</p>
                 </article>
             </div>
         </div>
     </section>
 
     <!-- Join the Lab Section -->
-    <section id="join" class="section alt-bg">
+    <section id="join" class="section">
         <div class="container">
-            <h2>Join the CPP Lab</h2>
-            <p class="section-intro">We are always looking for passionate researchers and students interested in computational clinical psychology.</p>
-            
-            <div class="join-content">
-                <div class="join-card">
-                    <h3>Graduate Students</h3>
-                    <p>We accept graduate students through the [Your Department] program. Interested students should:</p>
-                    <ul>
-                        <li>Apply through our department's graduate program</li>
-                        <li>Mention your interest in the CPP Lab in your application</li>
-                        <li>Contact Dr. [Your Name] directly with any questions</li>
-                    </ul>
+            <h2>Join the Lab</h2>
+            <div class="content">
+                <p>We are always looking for passionate researchers and students interested in computational clinical psychology.</p>
+                
+                <div class="join-items">
+                    <div class="item">
+                        <h3>Graduate Students</h3>
+                        <p>We accept graduate students through the [Your Department] program. Interested students should contact Dr. [Your Name] directly or apply through our department's graduate program.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Undergraduate Students</h3>
+                        <p>Undergraduate research opportunities are available for students with strong academic records and commitment to research.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Postdoctoral Researchers</h3>
+                        <p>Postdoctoral positions may be available. Interested candidates should contact Dr. [Your Name] with their CV and research interests.</p>
+                    </div>
                 </div>
-                <div class="join-card">
-                    <h3>Undergraduate Students</h3>
-                    <p>Undergraduate research opportunities are available for students with:</p>
-                    <ul>
-                        <li>Strong academic record</li>
-                        <li>Interest in psychology and computational methods</li>
-                        <li>Commitment to research</li>
-                    </ul>
+
+                <div class="contact-info" style="margin-top: 2em; padding: 1.5em; background-color: #f5f5f5;">
+                    <p><strong>For inquiries about joining the lab:</strong></p>
+                    <p>Dr. [Your Name]</p>
+                    <p><a href="mailto:your.email@institution.edu">your.email@institution.edu</a></p>
                 </div>
-                <div class="join-card">
-                    <h3>Postdoctoral Researchers</h3>
-                    <p>Postdoctoral positions may be available. Interested candidates should:</p>
-                    <ul>
-                        <li>Contact Dr. [Your Name] with your CV and research interests</li>
-                        <li>Check back for specific postdoc announcements</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="contact-cta">
-                <p>For inquiries about joining the lab, contact:</p>
-                <p><strong>Dr. [Your Name]</strong></p>
-                <p><a href="mailto:your.email@institution.edu">your.email@institution.edu</a></p>
             </div>
         </div>
     </section>
@@ -233,37 +191,39 @@
     <section id="participate" class="section">
         <div class="container">
             <h2>Participate in Our Research</h2>
-            <p class="section-intro">We are recruiting participants for our ongoing studies.</p>
-            
-            <div class="studies-grid">
-                <div class="study-card">
-                    <h3>Study Name</h3>
-                    <p><strong>Eligibility:</strong> Brief eligibility criteria</p>
-                    <p><strong>Time Commitment:</strong> Estimated time required</p>
-                    <p><strong>Compensation:</strong> Compensation details if applicable</p>
-                    <p>Brief description of what the study involves and its purpose.</p>
-                    <a href="#" class="study-button">Learn More & Sign Up</a>
+            <div class="content">
+                <p>We are recruiting participants for our ongoing studies. If you are interested in contributing to our research, please see the information below.</p>
+                
+                <div class="studies">
+                    <div class="item">
+                        <h3>Study Name</h3>
+                        <p><strong>Eligibility:</strong> Brief eligibility criteria</p>
+                        <p><strong>Time Commitment:</strong> Estimated time required</p>
+                        <p><strong>Compensation:</strong> Compensation details if applicable</p>
+                        <p>Brief description of what the study involves and its purpose.</p>
+                        <p><a href="#">Learn More & Sign Up</a></p>
+                    </div>
+                    <div class="item">
+                        <h3>Study Name</h3>
+                        <p><strong>Eligibility:</strong> Brief eligibility criteria</p>
+                        <p><strong>Time Commitment:</strong> Estimated time required</p>
+                        <p><strong>Compensation:</strong> Compensation details if applicable</p>
+                        <p>Brief description of what the study involves and its purpose.</p>
+                        <p><a href="#">Learn More & Sign Up</a></p>
+                    </div>
                 </div>
-                <div class="study-card">
-                    <h3>Study Name</h3>
-                    <p><strong>Eligibility:</strong> Brief eligibility criteria</p>
-                    <p><strong>Time Commitment:</strong> Estimated time required</p>
-                    <p><strong>Compensation:</strong> Compensation details if applicable</p>
-                    <p>Brief description of what the study involves and its purpose.</p>
-                    <a href="#" class="study-button">Learn More & Sign Up</a>
-                </div>
-            </div>
 
-            <div class="research-ethics">
-                <h3>Research Ethics & Participant Rights</h3>
-                <p>All studies are approved by the [Your University] Institutional Review Board (IRB). Participants have the right to:</p>
-                <ul>
-                    <li>Ask questions about the study at any time</li>
-                    <li>Withdraw from the study without penalty</li>
-                    <li>Have their data kept confidential</li>
-                    <li>Know the results of the research</li>
-                </ul>
-                <p>For questions about your rights as a research participant, contact [IRB Contact Information].</p>
+                <div class="ethics-info" style="margin-top: 2em; padding: 1.5em; background-color: #f5f5f5;">
+                    <h3>Research Ethics & Participant Rights</h3>
+                    <p>All studies are approved by the [Your University] Institutional Review Board (IRB). Participants have the right to:</p>
+                    <ul>
+                        <li>Ask questions about the study at any time</li>
+                        <li>Withdraw from the study without penalty</li>
+                        <li>Have their data kept confidential</li>
+                        <li>Know the results of the research</li>
+                    </ul>
+                    <p>For questions about your rights as a research participant, contact [IRB Contact Information].</p>
+                </div>
             </div>
         </div>
     </section>
@@ -271,30 +231,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>CPP Lab</h4>
-                    <p>Computational Clinical Psychology Lab</p>
-                    <p>[Your Institution Name]</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: <a href="mailto:your.email@institution.edu">your.email@institution.edu</a></p>
-                    <p>Phone: (XXX) XXX-XXXX</p>
-                    <p>Address: [Your Lab Address]</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <p>
-                        <a href="#" target="_blank">Twitter</a> | 
-                        <a href="#" target="_blank">GitHub</a> | 
-                        <a href="#" target="_blank">LinkedIn</a>
-                    </p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Computational Clinical Psychology Lab. All rights reserved.</p>
-            </div>
+            <p>&copy; 2026 Computational Clinical Psychology Lab. All rights reserved.</p>
+            <p><a href="mailto:your.email@institution.edu">Contact Us</a> | <a href="#">Privacy</a> | <a href="#">Accessibility</a></p>
         </div>
     </footer>
 
