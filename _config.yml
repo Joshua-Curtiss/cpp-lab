@@ -1,0 +1,37 @@
+# Computational Clinical Psychology Lab
+
+## Basic Site Settings
+
+title: "Computational Clinical Psychology Lab"
+
+description: "The official website of the Computational Clinical Psychology Lab at [Your Institution]."
+
+url: "https://yourinstitution.edu/lab"
+
+baseurl: ""  # the subpath of your site, e.g. /blog
+
+
+## Author information
+
+author:
+  name: "Joshua Curtiss"
+  email: "your-email@institution.edu"
+
+
+## Build settings
+
+markdown: kramdown
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+
+# Additional Settings
+
+social:
+  twitter: "@yourtwitterhandle"
+  github: "https://github.com/Joshua-Curtiss"
+
+# Add any additional configuration settings needed
+
