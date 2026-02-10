@@ -1,574 +1,60 @@
-/* General Styles */
-* {
+/**
+ * Reset some default CSS properties
+ */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/* Typography */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f5f5f5;
 }
 
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 0.5em;
+}
+
+/* Spacing */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
-a {
-    color: #2c5aa0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #1e3f66;
-}
-
-/* Navigation Bar */
+/* Navigation */
 .navbar {
-    background-color: #2c5aa0;
-    color: white;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.2rem;
-}
-
-.logo-subtitle {
-    font-size: 0.85rem;
-    opacity: 0.9;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.nav-link {
-    color: white;
-    font-weight: 500;
-    transition: opacity 0.3s ease;
-}
-
-.nav-link:hover {
-    opacity: 0.8;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-    transition: 0.3s;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, #2c5aa0 0%, #1e3f66 100%);
-    color: white;
-    padding: 6rem 2rem;
-    text-align: center;
-}
-
-.hero-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #ffc107;
+.navbar a {
     color: #333;
-    padding: 0.75rem 2rem;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #ffb300;
+.navbar a:hover {
+    background-color: #eaeaea;
 }
 
-/* Sections */
-.section {
-    padding: 4rem 2rem;
-    background-color: white;
-    margin: 2rem 0;
-}
-
-.section.alt-bg {
-    background-color: #f0f4f8;
-}
-
-.section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-    color: #2c5aa0;
-    text-align: center;
-}
-
-.section-intro {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 2.5rem;
-}
-
-/* Research Grid */
-.research-grid {
+/* Layout */
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.research-card {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid #2c5aa0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.research-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.research-card h3 {
-    color: #2c5aa0;
-    margin-bottom: 1rem;
-}
-
-.learn-more {
-    display: inline-block;
-    margin-top: 1rem;
-    font-weight: bold;
-}
-
-/* Team Styles */
-.team-section {
-    margin-bottom: 3rem;
-}
-
-.team-category {
-    font-size: 1.5rem;
-    color: #2c5aa0;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid #2c5aa0;
-    padding-bottom: 0.5rem;
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.team-member {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: box-shadow 0.3s ease;
-}
-
-.team-member:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.member-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 3px solid #2c5aa0;
-}
-
-.member-title {
-    color: #2c5aa0;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.member-bio {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.member-email {
-    display: inline-block;
-    background-color: #2c5aa0;
-    color: white;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-
-.member-email:hover {
-    background-color: #1e3f66;
-}
-
-/* Publications */
-.publications-list {
-    margin-top: 2rem;
-}
-
-.pub-year {
-    margin-bottom: 2.5rem;
-}
-
-.pub-year h3 {
-    color: #2c5aa0;
-    font-size: 1.3rem;
-    border-left: 3px solid #2c5aa0;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-.publication {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 5px;
-    border-left: 4px solid #ffc107;
-}
-
-.pub-title {
-    font-size: 1.05rem;
-    margin-bottom: 0.5rem;
-}
-
-.pub-authors {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 0.3rem;
-}
-
-.pub-journal {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 0.7rem;
-}
-
-.pub-links a {
-    margin-right: 1rem;
-    font-weight: bold;
-}
-
-/* Instruments */
-.instruments-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.instrument-card {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-    border-top: 4px solid #2c5aa0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.instrument-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.instrument-card h3 {
-    color: #2c5aa0;
-    margin-bottom: 1rem;
-}
-
-.instrument-card a {
-    margin-right: 1rem;
-    font-weight: bold;
-}
-
-/* News Grid */
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.news-item {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid #28a745;
-    transition: box-shadow 0.3s ease;
-}
-
-.news-item:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.news-item h3 {
-    color: #2c5aa0;
-    margin-bottom: 0.5rem;
-}
-
-.news-date {
-    color: #999;
-    font-size: 0.9rem;
-    margin-bottom: 0.7rem;
-}
-
-.news-content {
-    margin-bottom: 1rem;
-    color: #666;
-}
-
-/* Join Content */
-.join-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0 3rem;
-}
-
-.join-card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-top: 4px solid #2c5aa0;
-}
-
-.join-card h3 {
-    color: #2c5aa0;
-    margin-bottom: 1rem;
-}
-
-.join-card ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.join-card li {
-    margin-bottom: 0.5rem;
-    color: #555;
-}
-
-.contact-cta {
-    text-align: center;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.contact-cta p {
-    margin: 0.5rem 0;
-}
-
-/* Studies Grid */
-.studies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0 3rem;
-}
-
-.study-card {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid #2c5aa0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.study-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.study-card h3 {
-    color: #2c5aa0;
-    margin-bottom: 1rem;
-}
-
-.study-card p {
-    margin-bottom: 0.5rem;
-    color: #555;
-}
-
-.study-button {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #2c5aa0;
-    color: white;
-    padding: 0.6rem 1.5rem;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.study-button:hover {
-    background-color: #1e3f66;
-}
-
-/* Research Ethics */
-.research-ethics {
-    margin-top: 3rem;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.research-ethics h3 {
-    color: #2c5aa0;
-    margin-bottom: 1rem;
-}
-
-.research-ethics ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.research-ethics li {
-    margin-bottom: 0.5rem;
-    color: #555;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 /* Footer */
 .footer {
-    background-color: #2c5aa0;
-    color: white;
-    padding: 3rem 2rem 1rem;
-    margin-top: 2rem;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.footer-section h4 {
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #ffc107;
-    padding-bottom: 0.5rem;
-}
-
-.footer-section a {
-    color: #ffc107;
-}
-
-.footer-section a:hover {
-    color: white;
-}
-
-.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding: 10px 20px;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 1rem;
-    opacity: 0.8;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-menu {
-        gap: 1rem;
-        font-size: 0.9rem;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .section h2 {
-        font-size: 1.8rem;
-    }
-
-    .research-grid,
-    .team-grid,
-    .instruments-grid,
-    .news-grid,
-    .join-content,
-    .studies-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .member-photo {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .hero {
-        padding: 3rem 1rem;
-    }
-
-    .hero-content h2 {
-        font-size: 1.5rem;
-    }
-
-    .section {
-        padding: 2rem 1rem;
-    }
-
-    .section h2 {
-        font-size: 1.5rem;
-    }
 }
